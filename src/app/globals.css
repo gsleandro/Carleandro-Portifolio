@@ -1,0 +1,573 @@
+@import url("https://fonts.googleapis.com/css2?family=Parisienne&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background-color: #211c24;
+  font-family: 'Josefin Sans', sans-serif;
+  overflow-x:hidden;
+}
+
+.first {
+  display: flex;
+  background: rgb(18,18,20);
+  background: linear-gradient(180deg, rgba(18,18,20,1) 0%, #211c24 99%);  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+
+.first h1 {
+  font-size: 5rem;
+  font-family: "Parisienne", cursive;
+  background: -webkit-linear-gradient(#1C5D99, #D7263D);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.24));
+  -webkit-background-clip: text;
+  width: 100%;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+}
+.first h1:last-child {
+  transform: translateY(-60px);
+}
+.backgroundMain {
+  background-size: 100%;
+  object-fit: cover;
+  max-width: 500px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 5px solid white;
+  border-radius: 10px;
+  align-items: center;
+}
+.typewriter h4 {
+  cursor: pointer;
+  font-weight: bold;
+  color: #fff;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid #ff0000; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  font-size: 2.4rem;
+  animation: typing 3.5s steps(30, end), blink-caret 0.5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
+  }
+}
+
+.first svg{
+  width: 50px;
+  margin: 15px;
+  margin-top: 0px;
+}
+
+.Second div{
+  width: 800px;
+  text-align: left;
+}
+
+.Second{
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+  margin-top: 20vh;
+
+}
+.Second p{
+  font-size: 1.4rem;
+}
+.blob{
+  max-width: 500px;
+}
+
+.Second h2{
+  
+  background: -webkit-linear-gradient(#1C5D99,#D7263D);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.24));
+  -webkit-background-clip: text;
+  letter-spacing: -2px;
+  width: 100%;
+  text-align: left;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 1350px){
+  .Second p{
+    font-size: 1rem;
+  }
+  .Second{
+    width: 100%;
+  }
+  h2{
+    font-size: 1.4rem;
+  }
+  .blob{
+    width: 300px;
+  }
+}
+
+.third{
+  margin-top: 10vh;
+}
+.third h1 {
+  font-size: 2.4rem;
+  letter-spacing: -2px;
+  background: -webkit-linear-gradient(#1C5D99, #D7263D);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.24));
+  -webkit-background-clip: text;
+  width: 100%;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+}
+
+.Card{
+  width: calc(50% - 40px);
+  background-color: #19141b;
+  padding: 10px;
+  margin: 10px;
+}
+
+.Card h3{
+  font-size: 1.4rem;
+  letter-spacing: -2px;
+  background: -webkit-linear-gradient(#1C5D99, #D7263D);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.24));
+  -webkit-background-clip: text;
+  width: 100%;
+  text-align: left;
+  -webkit-text-fill-color: transparent;
+}
+
+.Card a{
+  background-color: #D7263D;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+.Card a:hover{
+  background-color: #7e1826;
+}
+
+.third div{
+display: flex;
+justify-content: center;
+}
+.third div ul{
+  width:50%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  height: 300px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.Card{
+  overflow: hidden;
+}
+
+.language{
+margin: 15px;
+margin-left: 0px;
+background-color: #211c24;
+padding: 10px;
+border-radius: 15px;
+}
+.languages{
+margin: 15px;
+margin-left: 0px;
+}
+#Mais{
+  background-color: #D7263D;
+  padding: 10px 60px;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+}
+@media screen and (max-width: 625px){
+  .Second{
+    flex-direction: column;
+    width: calc(100% - 20px);
+    margin-top: 10vh;
+  }
+  .Second p{
+    width: 100%;
+    width: calc(100% - 20px);
+  }
+  .Second div{
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  .third div ul{
+    width:100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    height: 300px;
+    overflow: hidden;
+    flex-wrap: wrap;
+  }
+  .third div ul li{
+    width: 100%;
+  }
+  .typewriter h4{
+    font-size: 1.8rem;
+  }
+  }
+
+  .arrow svg{
+    animation: down 2.5s infinite linear;
+  }
+
+  @keyframes down{
+
+    0%{
+      transform: translateY(0px);
+    }50%{
+      transform: translateY(-20px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+  /* The switch - the box around the slider */
+.switch {
+  font-size: 17px;
+  position: absolute;
+  display: inline-block;
+  width: 5.2em;
+  height: 2em;
+  overflow: hidden;
+  right: 15px;
+  top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #eee;
+  transition: .4s;
+  border-radius: 30px;
+  border: 2px solid #ccc;
+
+
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 1.4em;
+  width: 1.4em;
+  border-radius: 20px;
+  border: 1px solid #333;
+  left: 0.4em;
+  bottom: 0.2em;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #483c88;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #483c88;
+}
+
+input:checked + .slider:before {
+  transform: translateX(3em);
+}
+
+.switch .text {
+  position: absolute;
+  top: 50%;
+  pointer-events: none;
+  text-transform: uppercase;
+  transform: translateY(-50%);
+  transition: .4s;
+}
+
+.switch .text.on {
+  left: .8rem;
+  transform: translateX(-3rem) translateY(-50%);
+}
+
+.switch .text.off {
+  color: #999;
+  right: .8rem;
+}
+
+input:checked ~ .text.off {
+  transform: translateX(3rem) translateY(-50%);
+}
+
+input:checked ~ .text.on {
+  transform: translateX(0) translateY(-50%);
+}
+
+
+
+
+
+
+
+:root {
+  --primary-color: #212121;
+  --background-color: #111;
+  --font: sans-serif;
+}
+
+/* Timeline Container */
+.timeline {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  padding: 20px;
+  margin-top: 10vh;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  max-width: 400px;
+}
+
+/* setting padding based on even or odd */
+.card:nth-child(odd) {
+  padding: 30px 0 30px 30px;
+}
+.card:nth-child(even) {
+  padding: 30px 30px 30px 0;
+}
+/* Global ::before */
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  border: solid #D7263D;
+}
+
+/* Setting the border of top, bottom, left */
+.card:nth-child(odd)::before {
+  left: 0px;
+  top: -4.5px;
+  bottom: -4.5px;
+  border-width: 5px 0 5px 5px;
+  border-radius: 50px 0 0 50px;
+}
+
+/* Setting the border of top, bottom, right */
+.card:nth-child(even)::before {
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 5px 5px 5px 0;
+  border-radius: 0 50px 50px 0;
+}
+
+/* Removing the border if it is the first card */
+.card:first-child::before {
+  border-top: 0;
+  border-top-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's odd */
+.card:last-child:nth-child(odd)::before {
+  border-bottom: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Removing the border if it is the last card  and it's even */
+.card:last-child:nth-child(even)::before {
+  border-bottom: 0;
+  border-bottom-right-radius: 0;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  background: #19141b;
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Title of the card */
+.title {
+  font-size: 1.4rem;
+  letter-spacing: -2px;
+  background: -webkit-linear-gradient(#1C5D99, #D7263D);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.24));
+  -webkit-background-clip: text;
+  width: 100%;
+  text-align: left;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #1C5D99;
+  border-radius: 999px;
+  border: 3px solid #000000;
+}
+
+/* text right if the card is even  */
+.card:nth-child(even) > .info > .title {
+  text-align: right;
+}
+
+/* setting dot to the left if the card is odd */
+.card:nth-child(odd) > .info > .title::before {
+  left: -45px;
+}
+
+/* setting dot to the right if the card is odd */
+.card:nth-child(even) > .info > .title::before {
+  right: -45px;
+}
+.Five img{
+  width: 120px;
+  cursor: pointer;
+  height: 120px;
+  margin: 10px;
+  border-radius: 60px;
+  padding: 5px;
+  border:  2px solid #483c88;
+}
+.Five .skills{
+  max-width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.Five {
+  transition: 1s all linear;
+  margin-top: 10vh;
+  display: flex; 
+  justify-content: center;
+}
+
+.Four {
+  margin-top: 10vh;
+}
+.Four h1,.Five h1{
+  text-align: center;
+  font-size: 2.4rem;
+  letter-spacing: -2px;
+  background: -webkit-linear-gradient(#1C5D99, #D7263D);
+  filter: drop-shadow(0px 0px 2px rgba(255, 255, 255, 0.24));
+  -webkit-background-clip: text;
+  width: 100%;
+  -webkit-text-fill-color: transparent;
+}
+.main{
+  background-color: red;
+}
+.NoMain{
+  background-color: red;
+}
+.Five p{
+  width: 300px;
+}
+.Five img:hover{
+  background-color: #0e0b0f;
+}
+
+footer{
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  padding: 20px;
+  border-top: 1px solid white;
+  background-color: #5f50b3;
+  
+}
+@media screen and (max-width: 768px) {
+  .Five .skills{
+    width: 50%;
+    max-width: 50%;
+  }
+  .Five .textS{
+    width: 50%;
+  }
+  .Five{
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .Five img{
+    width: 50px;
+    margin: 3px;
+    height: 50px;
+  }
+  .Five p{
+    font-size: 1rem;
+  }
+}
