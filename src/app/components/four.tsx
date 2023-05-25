@@ -8,10 +8,11 @@ function Four() {
   <div className="outer">
   <div className="card">
       <div className="info">
-        <h3 className="title">Tecnico Especializado em informatica</h3>
-        <h4>Abril/2023 - Atualmente</h4>
-        <p>Como tecnico passo oficinas de informatica, manutenção de hardware, Robotica para diversas turmas desde crianças a idosos e pessoas com deficiencias. </p>
-      </div>
+        <h3 className="title">Estágiario em Ti</h3>
+        <h4>Maio/2023 - Atualmente</h4>
+        <p>Como Técnico em informática, eu faço a manutenções de Hardwares e instalações de software.</p>
+      </div> 
+
     </div>
     <div className="card">
       <div className="info">
