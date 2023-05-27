@@ -2,7 +2,7 @@ function Four() {
     return ( 
       <div className="Four">
                   <h1>Experiencia</h1>
-          <br />
+          <br/>
         <div className="timeline">
 
   <div className="outer">
